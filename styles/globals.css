@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: Azonix;
+  src: url(../public/assets/fonts/Azonix/Azonix.otf);
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url(../public/assets/fonts/Cairo/Cairo-Regular.ttf);
+  src: url(../public/assets/fonts/Cairo/Cairo-Black.ttf);
+}
+
+.font-type-2 {
+  font-family: Azonix
+}
+
+.font-type-3 {
+  font-family: Cairo
+}
+
+.text-green-color {
+  color: #749C07
+}
+
+.header-bg {
+  @apply bg-[url('../public/assets/Barra-de-menu.svg')];
+}
+
+.form {
+  @apply bg-[url('../public/assets/Box.webp')] bg-contain bg-no-repeat md:bg-none bg-center;
+  @apply p-4 md:p-0;
+}
+
+.form-head {
+  @apply bg-[url('../public/assets/Box.webp')] bg-cover bg-no-repeat;
+  @apply text-white font-medium md:py-0.5 md:px-4;
+}
+
+.input {
+  @apply block w-full border rounded-md py-1.5 px-4 md:py-3;
+}
+
+.input:focus {
+  @apply border md:border-2 border-green-700 outline-none;
+  /* @apply outline-green-700; */
+}
+
+.invalid,
+.invalid:focus {
+  @apply border md:border-2 border-red-700 outline-none;
+}
+
+.btn {
+  @apply px-6 py-1.5;
+}
+
+.btn-main {
+  @apply bg-[url('../public/assets/Teclado-verde-1.webp')] bg-contain bg-no-repeat bg-center;
+  @apply w-40 text-center font-type-2 text-white py-2;
+}
+
+.submit-btn {
+  @apply bg-[url('../public/assets/Teclado-verde.webp')] bg-contain bg-no-repeat;
+  @apply text-white font-medium;
+}
+
+.back-btn {
+  @apply flex gap-1 items-center text-green-color font-medium;
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
